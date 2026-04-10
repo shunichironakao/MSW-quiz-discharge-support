@@ -321,6 +321,27 @@
     color: var(--primary);
     font-weight: 600;
   }
+  .home-credit {
+    margin-top: 28px;
+    padding: 14px 16px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--muted);
+  }
+  .home-disclaimer {
+    font-size: 0.78rem;
+    margin: 0 0 10px 0;
+  }
+  .home-author {
+    font-size: 0.76rem;
+    margin: 0 0 8px 0;
+    line-height: 1.55;
+  }
+  .home-reference {
+    font-size: 0.72rem;
+    margin: 0;
+    line-height: 1.55;
+  }
 </style>
 </head>
 <body>
@@ -901,6 +922,16 @@ function renderHome() {
     <p style="text-align:center;color:var(--muted);font-size:0.85rem;margin-top:24px;">
       事例カードを選んでクイズを開始してください。各シナリオには複数の設問があります。
     </p>
+    <div class="home-credit">
+      <p class="home-disclaimer">※ 本アプリは学習目的のシミュレーションです。実際の制度運用や対象要件は自治体・最新の法令をご確認ください。</p>
+      <p class="home-author">
+        作成者:Shunichiro Nakao, MD, MSc, PhD<br>
+        Department of Traumatology and Acute Critical Medicine, The University of Osaka
+      </p>
+      <p class="home-reference">
+        参考文献:Nakao S, Fukumori Y, Takahashi Y, Ogura H, Oda J. Medical social worker support for elderly patients in a tertiary care hospital in Japan. <i>Journal of Social Work</i>. 2024;24(1):114-125. doi:10.1177/146801732311944
+      </p>
+    </div>
   `;
   document.querySelectorAll('.scenario-card').forEach(c => {
     c.addEventListener('click', () => startScenario(parseInt(c.dataset.id)));
