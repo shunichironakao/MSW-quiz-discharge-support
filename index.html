@@ -342,6 +342,9 @@
     margin: 0;
     line-height: 1.55;
   }
+  .home-tabs button {
+    margin: 0 6px 8px 6px;
+  }
 </style>
 </head>
 <body>
@@ -914,6 +917,15 @@ const referenceData = [
   }
 ];
 
+// ============================================================
+// アンケート設定
+// ------------------------------------------------------------
+// 回答はGoogle Formで収集し、Google Sheetsに自動集計されます。
+// フォームURLを変更する場合は下記のGOOGLE_FORM_URLを書き換えてください。
+// 公開URLは Google Form の「送信」→ リンクアイコンから取得できます。
+// ============================================================
+const GOOGLE_FORM_URL = "https://forms.gle/XLoJy6Sj5qA25Auo6";
+
 const app = document.getElementById('app');
 let currentScenario = null;
 let currentQ = 0;
@@ -924,6 +936,7 @@ function renderHome() {
   app.innerHTML = `
     <div class="home-tabs">
       <button class="primary" id="open-ref">📚 公的支援制度リファレンスを開く</button>
+      <button class="secondary" id="open-survey">📝 アンケートに回答する(別タブで開きます)</button>
     </div>
     <h2 class="section-heading">事例集(クイズ)</h2>
     <div class="scenario-list">
@@ -952,6 +965,9 @@ function renderHome() {
     c.addEventListener('click', () => startScenario(parseInt(c.dataset.id)));
   });
   document.getElementById('open-ref').addEventListener('click', renderReference);
+  document.getElementById('open-survey').addEventListener('click', () => {
+    window.open(GOOGLE_FORM_URL, '_blank', 'noopener');
+  });
 }
 
 function renderReference() {
