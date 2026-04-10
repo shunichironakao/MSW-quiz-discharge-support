@@ -2,17 +2,6 @@
 
 救命救急センターに勤務する医療従事者・研修医・医療ソーシャルワーカー(MSW)向けに、突然の傷病で救急搬送された高齢者の退院支援において必要となる公的支援・社会資源を学習するためのWebアプリです。
 
-## 作成者
-
-**Shunichiro Nakao, MD, MSc, PhD**
-Department of Traumatology and Acute Critical Medicine, The University of Osaka
-
-## 参考文献
-
-Nakao S, Fukumori Y, Takahashi Y, Ogura H, Oda J. Medical social worker support for elderly patients in a tertiary care hospital in Japan. *Journal of Social Work*. 2024;24(1):114-125. doi:[10.1177/146801732311944](https://doi.org/10.1177/146801732311944)
-
-本アプリのシナリオ設計と公的支援制度の分類は、上記研究における三次救急医療機関でのMSW支援内容の実態調査を踏まえて構築されています。
-
 ## 概要
 
 超高齢化社会において、救急搬送される高齢者の多くは、急性期治療が終わった後、直ちに在宅復帰できないことがしばしばあります。本人・家族の状況(独居、疎遠な家族、認知症、経済的困窮、老老介護など)に応じて、適切な公的支援・社会資源を組み合わせる必要があります。本アプリは、典型的な5シナリオを通じて、MSWの介入ポイントと制度選択の考え方をクイズ形式で学べる教材です。
@@ -140,3 +129,14 @@ MSW_quiz/
 ## ライセンス
 
 教育・学習目的での自由な利用・改変を想定しています。
+
+## 作成者
+
+**Shunichiro Nakao, MD, MSc, PhD**
+Department of Traumatology and Acute Critical Medicine, The University of Osaka
+
+## 参考文献
+
+Nakao S, Fukumori Y, Takahashi Y, Ogura H, Oda J. Medical social worker support for elderly patients in a tertiary care hospital in Japan. *Journal of Social Work*. 2024;24(1):114-125. doi:[10.1177/146801732311944](https://doi.org/10.1177/146801732311944)
+
+本アプリのシナリオ設計と公的支援制度の分類は、上記研究における三次救急医療機関でのMSW支援内容の実態調査を踏まえて構築されています。
