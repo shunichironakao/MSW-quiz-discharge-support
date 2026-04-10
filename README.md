@@ -133,6 +133,7 @@ MSW_quiz/
 ## 作成者
 
 **Shunichiro Nakao, MD, MSc, PhD**
+
 Department of Traumatology and Acute Critical Medicine, The University of Osaka
 
 ## 参考文献
