@@ -854,9 +854,7 @@ const referenceData = [
       { name: "レスパイトケア(ショートステイ・デイ等)", desc: "介護者の休養・負担軽減のための介護保険サービス。", provider: "介護保険指定事業所", where: "ケアマネジャー経由 / 緊急時は地域包括支援センター" },
       { name: "家族会・介護者サークル(認知症の人と家族の会等)", desc: "ピアサポート、情報交換。インフォーマルだが心理的支援に有効。", provider: "民間NPO・公益社団法人等", where: "各団体に直接連絡 / 地域包括支援センター・認知症疾患医療センターから紹介" },
       { name: "介護休業・介護休暇制度", desc: "労働者向け。介護休業(通算93日)・介護休暇(年5日/10日)。", provider: "国(育児・介護休業法)/ 事業主が付与", where: "勤務先に申出 / 介護休業給付金はハローワーク(事業所所在地)" },
-      { name: "ヤングケアラー支援", desc: "子ども・若年介護者への支援。教育・福祉連携。", provider: "国・自治体 / 教育委員会", where: "市町村のヤングケアラー相談窓口・スクールソーシャルワーカー" },
-      { name: "グリーフケア", desc: "死別後の家族の悲嘆ケア。", provider: "医療機関(緩和ケアチーム・遺族外来)・民間支援団体", where: "医療機関の緩和ケア外来・遺族外来 / 各支援団体に直接" },
-      { name: "退院前カンファレンス", desc: "病院・在宅医療チーム・ケアマネ・家族が情報共有(診療報酬算定対象)。", provider: "病院主催", where: "病院MSWが招集・調整" }
+      { name: "ヤングケアラー支援", desc: "子ども・若年介護者への支援。教育・福祉連携。", provider: "国・自治体 / 教育委員会", where: "市町村のヤングケアラー相談窓口・スクールソーシャルワーカー" }
     ]
   },
   {
@@ -866,7 +864,6 @@ const referenceData = [
       { name: "成年後見制度(法定後見:後見・保佐・補助)", desc: "判断能力が不十分な人の財産管理・身上保護。家族・市町村長申立て。", provider: "国(法定)/ 家庭裁判所が選任・監督", where: "本人住所地を管轄する家庭裁判所に申立て / 相談は市町村成年後見センター・社協・地域包括支援センター" },
       { name: "任意後見制度", desc: "判断能力があるうちに将来の後見人を契約で決めておく。", provider: "国(法定)", where: "公証役場で任意後見契約を締結 / 発効時に家庭裁判所へ任意後見監督人選任申立て" },
       { name: "日常生活自立支援事業", desc: "金銭管理・福祉サービス利用援助。後見ほどではない判断能力低下者向け。", provider: "国(補助)/ 都道府県社会福祉協議会・指定都市社協が実施", where: "市町村社会福祉協議会(社協)" },
-      { name: "ACP(アドバンス・ケア・プランニング / 人生会議)", desc: "本人の価値観・希望を多職種で繰り返し話し合うプロセス。本人・家族の意思決定を支援。", provider: "国(厚生労働省ガイドライン)/ 医療・介護現場が実践", where: "医療機関(主治医・MSW)、ケアマネ、訪問診療医など関わる多職種で実施" },
       { name: "高齢者虐待防止法(高齢者虐待の防止・養護者支援)", desc: "養護者・施設従事者による虐待から高齢者を保護するとともに、虐待してしまう養護者を支援する制度。通報により市町村が調査・介入・保護。", provider: "国(法定)/ 市町村が対応主体", where: "市町村高齢福祉担当課・地域包括支援センター(通報・相談窓口)" },
       { name: "障害者虐待防止法(障害者虐待の防止・養護者支援)", desc: "養護者・障害者福祉施設従事者・使用者による障害者への虐待を防止。被害者の保護と養護者支援。救命センターで発見される高齢障害者への虐待対応にも活用。", provider: "国(法定)/ 市町村・都道府県が対応主体", where: "市町村障害者虐待防止センター・都道府県障害者権利擁護センター" },
       { name: "配偶者暴力(DV)相談支援センター", desc: "配偶者等からの暴力被害者(高齢者を含む)の相談、一時保護、自立支援。配偶者暴力防止法(DV防止法)に基づく。", provider: "国(法定)/ 都道府県・市町村", where: "都道府県・市町村の配偶者暴力相談支援センター / DV相談+(プラス)24時間電話相談 0120-279-889" },
@@ -966,11 +963,20 @@ function renderHome() {
     <div class="home-credit">
       <p class="home-disclaimer">※ 本アプリは学習目的のシミュレーションです。実際の制度運用や対象要件は自治体・最新の法令をご確認ください。</p>
       <p class="home-author">
-        作成者:Shunichiro Nakao, MD, MSc, PhD<br>
+        作成者：Shunichiro Nakao, MD, MSc, PhD<br>
         Department of Traumatology and Acute Critical Medicine, The University of Osaka
       </p>
       <p class="home-reference">
-        参考文献:Nakao S, Fukumori Y, Takahashi Y, Ogura H, Oda J. Medical social worker support for elderly patients in a tertiary care hospital in Japan. <i>Journal of Social Work</i>. 2024;24(1):114-125. doi:10.1177/146801732311944
+        参考文献：Nakao S, Fukumori Y, Takahashi Y, Ogura H, Oda J. Medical social worker support for elderly patients in a tertiary care hospital in Japan. <i>Journal of Social Work</i>. 2024;24(1):114-125. doi:10.1177/146801732311944
+      </p>
+      <p class="home-reference" style="margin-top:6px;">
+        公的支援制度リファレンスの各項目は、厚生労働省・各府省庁の公開資料、法令データベース（e-Gov法令検索）、および各自治体の公開情報に基づいて作成しています。掲載されている団体名・サービス名は情報提供を目的としたものであり、特定の団体・サービスの推薦・保証を意味するものではありません。
+      </p>
+      <p class="home-reference" style="margin-top:6px;">
+        本アプリのコンテンツ作成にはAI（Claude, Anthropic社）を補助的に使用しています。
+      </p>
+      <p class="home-reference" style="margin-top:6px;">
+        © 2024-2026 Shunichiro Nakao. All rights reserved. 本著作物は <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ja" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a> ライセンスの下に提供されています。
       </p>
     </div>
   `;
@@ -1008,10 +1014,18 @@ function renderReference() {
           </section>
         `).join('')}
       </div>
-      <p style="text-align:center;font-size:0.72rem;color:var(--muted);margin-top:32px;line-height:1.55;">
-        作成者：Shunichiro Nakao, MD, MSc, PhD<br>
-        Department of Traumatology and Acute Critical Medicine, The University of Osaka
-      </p>
+      <div style="text-align:center;font-size:0.72rem;color:var(--muted);margin-top:32px;line-height:1.55;">
+        <p style="margin:0;">
+          各項目の情報は、厚生労働省・各府省庁の公開資料、法令データベース（e-Gov法令検索）、および各自治体の公開情報に基づいて作成しています。掲載されている団体名・サービス名は情報提供を目的としたものであり、特定の団体・サービスの推薦・保証を意味するものではありません。
+        </p>
+        <p style="margin:8px 0 0 0;">
+          作成者：Shunichiro Nakao, MD, MSc, PhD<br>
+          Department of Traumatology and Acute Critical Medicine, The University of Osaka
+        </p>
+        <p style="margin:4px 0 0 0;">
+          © 2024-2026 Shunichiro Nakao. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ja" target="_blank" rel="noopener" style="color:var(--muted);">CC BY-NC-ND 4.0</a>
+        </p>
+      </div>
     </div>
   `;
   document.getElementById('back').addEventListener('click', renderHome);
