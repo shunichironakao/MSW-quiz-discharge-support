@@ -140,7 +140,25 @@ MSW_quiz/
 
 ## ライセンス
 
-教育・学習目的での自由な利用・改変を想定しています。
+本著作物は [Creative Commons 表示-非営利-改変禁止 4.0 国際ライセンス (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ja) の下に提供されています。
+
+[![CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ja)
+
+### 許可されること
+- 教育・学習・研究目的での個人利用
+- 出典を明記したうえでの共有(原著のまま)
+- 論文・学会発表等での引用(著作者名・出典を明示)
+
+### 禁止事項
+- **商用利用**(販売、広告収入目的での利用、有料サービスへの組み込み等)
+- **無断転載・無断複製**(著作者の許可のない再配布)
+- **改変した著作物の配布**(改変・翻案した成果物の公開・配布)
+- **著作者名・出典を明示しない利用**
+
+### 著作権表示
+© 2024-2026 Shunichiro Nakao, MD, MSc, PhD. All rights reserved.
+
+詳細は [LICENSE](./LICENSE) ファイルをご参照ください。商用利用・改変・二次利用等のご相談は作成者までお問い合わせください。
 
 ## 作成者
 
