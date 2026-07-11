@@ -182,11 +182,13 @@ MSW_quiz/
 ## 作成者
 
 **Shunichiro Nakao, MD, MSc, PhD**
+**Yumi Takahashi, MSW**
+**Yuji Fukumori, MSW**
 
 Department of Traumatology and Acute Critical Medicine, The University of Osaka
 
 ## 参考文献
 
-Nakao S, Fukumori Y, Takahashi Y, Ogura H, Oda J. Medical social worker support for elderly patients in a tertiary care hospital in Japan. *Journal of Social Work*. 2024;24(1):114-125. doi:[10.1177/146801732311944](https://doi.org/10.1177/146801732311944)
+Nakao S, Fukumori Y, Takahashi Y, Ogura H, Oda J. Medical social worker support for elderly patients in a tertiary care hospital in Japan. *Journal of Social Work*. 2024;24(1):114-125. doi:[10.1177/14680173231194439](https://doi.org/10.1177/14680173231194439)
 
 本アプリのシナリオ設計と公的支援制度の分類は、上記研究における三次救急医療機関でのMSW支援内容の実態調査を踏まえて構築されています。
