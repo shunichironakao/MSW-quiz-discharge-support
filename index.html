@@ -1642,6 +1642,7 @@ function renderQuestion() {
   const s = currentScenario;
   const q = s.questions[currentQ];
   const a = answers[currentQ];
+  const need = q.options.filter(o => o.correct).length;
   app.innerHTML = `
     <div class="quiz-view">
       <button class="back-btn" id="back">← 事例一覧に戻る</button>
@@ -1650,7 +1651,7 @@ function renderQuestion() {
       <div class="progress">設問 ${currentQ + 1} / ${s.questions.length}</div>
       <div class="question">
         ${q.q}
-        <div class="question-instruction">${q.type === 'multi' ? '※ あてはまるものをすべて選択してください' : '※ 1つ選択してください'}</div>
+        ${/選べ|選択|どれ/.test(q.q) ? '' : `<div class="question-instruction">${q.type === 'multi' ? '※ もっとも優先すべき' + need + 'つを選択してください' : '※ 1つ選択してください'}</div>`}
       </div>
       <div class="options" id="options">
         ${q.options.map((opt, i) => {
@@ -1673,7 +1674,7 @@ function renderQuestion() {
       ${a.submitted ? `<div class="explanation"><h4>解説</h4>${q.explain}</div>` : ''}
       <div class="actions">
         ${!a.submitted
-          ? `<button class="primary" id="submit" ${a.selected.length === 0 ? 'disabled' : ''}>回答する</button>`
+          ? `<button class="primary" id="submit" ${a.selected.length !== need ? 'disabled' : ''}>回答する</button>`
           : (currentQ < s.questions.length - 1
               ? `<button class="primary" id="next">次の設問へ →</button>`
               : `<button class="primary" id="finish">結果を見る</button>`)
@@ -1692,7 +1693,7 @@ function renderQuestion() {
         a.selected = [i];
       } else {
         if (a.selected.includes(i)) a.selected = a.selected.filter(x => x !== i);
-        else a.selected.push(i);
+        else if (a.selected.length < need) a.selected.push(i);
       }
       renderQuestion();
     });
